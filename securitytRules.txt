@@ -1,0 +1,27 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+  
+     function isAuthenticated(){
+     return request.auth != null;
+     }  
+     function isA(){
+     return  isAuthenticated() &&  get( /databases/$(database)/documents/users/$(request.auth.uid)).data.isA==true;
+     } 
+     
+     match /users/{userId}/{resumes=**} {
+      allow read, update, delete: if isAuthenticated() && request.auth.uid == userId;
+      allow create: if request.auth != null;
+     }
+     match  /data/id  {
+      allow read,write,update;
+    }
+     match  /data/ads  {
+      allow read,write,delete : if isA() ;
+    }
+      match  /data/stats  {
+      allow write;
+      allow read : if isA();
+    }
+  }
+}

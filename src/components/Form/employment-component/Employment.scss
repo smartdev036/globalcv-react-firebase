@@ -1,0 +1,39 @@
+.panel{
+    margin: 10px 0px;
+    border: 2px solid #F8FAFE;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: all  ease-in-out;
+    .panel-heading{
+      width: 100%;
+      display: flex;
+      transition: all  ease-in-out;
+    .panel-title{
+        font-weight: 600;
+        font-size: 17px;
+        
+    }
+    .panel-subtitle{
+        font-size: 15px;
+        margin-left: 20px;
+        color: #98A1B3;
+    }
+    .panel-toggler{
+        margin-left: auto;
+        align-self: center;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+    }
+    .panel-toggler-opened{
+        transform: rotate(180deg);
+    }
+
+            
+}
+.panel-body{
+    transition: all 1s;
+}
+    
+}

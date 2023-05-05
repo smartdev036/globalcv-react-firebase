@@ -1,0 +1,331 @@
+@import "./components/variables.scss";
+@import "./components/variables.scss";
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+#root {
+    height: 100%;
+    // overflow: hidden;
+    min-height: 100%;
+}
+.footer {
+    display: none;
+}
+.logo {
+    width: 170px;
+    height: 42px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#Resume > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Resume canvas {
+    position: relative!important;
+    background-color: white !important;
+}
+
+.konvajs-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Mobile Stylings
+// Tablets and medium/big size mobiles
+@media only screen and (min-width: 730px){
+
+        .wrapper{
+        height: 100%;
+        width: 100%;
+        min-width: 100%;
+        display: flex;
+        flex-direction: row !important;
+    }
+    .actions{
+        flex: 1;
+        // height: 100%;
+        width: 100%;
+    }
+}
+  
+@media only screen and (max-width: 730px){
+    .logo {
+        width: 100px;
+        height: 30px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .wrapper .authentication a{
+        font-size: 10px !important;
+        margin:2px 4px;
+    }
+    .action-introWrapper .head .authentication .authenticationButton{
+        margin-right: 4px !important;
+    }
+    .action-introWrapper .head .authentication{
+        margin-top:  14px ;
+    }
+
+body,
+    html {
+        width: 100%;
+        min-height: 100%;
+    }
+    #root {
+        //  height: unset;
+        width: 100%;
+        min-width: 100%;
+        min-height: 100% !important;
+        position: relative;
+        overflow: scroll;
+        margin-top:20px;
+    }
+
+    .mobile-only {
+        display: block !important;
+    }
+    .ad {
+        display: none;
+    }
+
+    .ad-mobile {
+        // display: unset !important;
+    }
+
+    .adminTabs {
+        .adminTab {
+            min-width: 100px !important;
+            width: 120px !important;
+            .adminTabLeft {
+                .number {
+                    font-size: 12px;
+                }
+                .tabTitle {
+                    font-size: 12px;
+                }
+            }
+            .adminTabRight {
+                .adminTabCircle {
+                    width: 50px !important;
+                    height: 50px !important;
+                }
+            }
+        }
+    }
+
+    .wrapper {
+        flex-direction: column !important;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        min-height: 100% !important;
+        height:100%;
+        .grid-2-col {
+            grid-template-columns: 1fr;
+        }
+
+        .previewButton {
+            // display: unset;
+        }
+        .wrapper {
+            .actions {
+                position:relative;
+
+                max-width: 100%;
+                min-height: auto;
+                .action-introWrapper {
+                    padding: 20px;
+                    max-width: 100%;
+                }
+            }
+        }
+        .boardShowed {
+            transform: translateX(0px) !important;
+        }
+
+        .action-introWrapper {
+            height: 100%;
+            display: block;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-size: 1.9rem !important;
+            }
+            ul {
+                padding: 0;
+                li {
+                    font-size: 1rem;
+                    .numberWrapper {
+                        min-width: 40px;
+                        min-height: 40px;
+                    }
+                }
+            }
+
+            .body {
+                display: flex;
+
+                justify-content: center;
+            }
+        }
+        .right-panel {
+            // transform: translateX(1050px);
+            // transition: all 0.3s ease-in-out;
+
+            width: 100%;
+            height: 100%;
+            .board {
+                position:relative;
+                padding-top: 0px !important;
+                //  justify-content: center;
+                margin-bottom: 70px;
+                width: 100%;
+
+                .ad-mobile {
+                    display: block !important;
+                }
+                .board-heading {
+                    .title {
+                        font-size: 24px !important;
+                    }
+                }
+
+                .templateSelection {
+                    width: 90%;
+                    font-size: 12px !important;
+                    .templatesList {
+                        .template {
+                            width: 90% !important;
+                            height: auto;
+                                                              img {
+                                max-width: 90%;
+                                min-height: auto;;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Dashboard
+    .dashboardWrapper {
+        .navbar {
+            .dashboardNavigaitionList {
+                display: none;
+            }
+            .dashboarProfile {
+                .dashboardDropdown {
+                    .mobileItems {
+                        display: block !important;
+                    }
+                }
+            }
+        }
+        .dashboardContent {
+            width: 80% !important;
+
+            .resumeItemContentWrapper {
+                .name {
+                    font-size: 14px;
+                }
+                .occupation {
+                    font-size: 13px;
+                }
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .container{
+        margin-top: 0;
+    }
+    .h-navbar-rt{
+        margin:0;
+    }
+    #root{
+        margin-top: 0 !important;
+    }
+
+    .board .big-btn-js{
+        padding: 7px 16px;
+        font-size: 20px  !important;
+        border: 1px solid #694AFF;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        width: 80%;
+    }
+    canvas{
+        width: 80% !important;
+        height: 80% !important;
+    }
+
+}
+
+
+.navbar .nav li a{
+    padding: 0 !important;
+}
+
+.navbar.nav li:hover a{
+    color: white;
+    background:none;
+}
+.navbar-nav>li>a{
+    color: #694AFF !important;
+    background:none;
+    display: block;
+}
+.navbar-nav>li.active a{
+    color: white !important;
+    background:#694AFF !important;
+    display: block;
+}
+.navbar.nav> li{
+    display: block;
+    width: 100%;
+}
+.navbar .nav li:hover{
+    border: 1px solid #694AFF !important;
+    color: white;
+}
+.navbar .nav li a:hover{
+    background:none;
+}
+
+.navbar-inverse {
+    background-color: white !important;
+    border: none;
+}
+.navbar-toggle{
+    background-color: #694AFF !important;
+}
+.container-fluid .navbar-header button.navbar-toggle span.icon-bar{
+    background-color:white;
+}.h-navbar-rt ul li{
+    display: block !important;
+}
+.navbar{
+    border:none !important;
+}
+
+.navbar-collapse.collapse{
+    color: white;
+}
+.white{
+    color: white !important;
+    font-weight: 500;
+}
+
+// Mobile Stylings
+// Tablets and medium/big size mobiles
+
+

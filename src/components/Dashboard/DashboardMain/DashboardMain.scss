@@ -1,0 +1,200 @@
+@import "../../variables.scss";
+.btn-default{
+    display: inline;
+    color: #694AFF !important;
+    font-size: 14px !important;
+    padding: 4px 8px !important;
+    background-color: white !important;
+    width: 100px;
+    margin-right: -10px;
+}
+.red{
+    color: white !important;
+    background-color: red !important;
+}
+.blue{
+    color: white !important;
+    background-color: blue !important;
+}
+.dashboardWrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-family: $font;
+    .navbar {
+        background-color: white;
+        height: 70px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .brand {
+            padding-left: 40px;
+            img {
+                width: 160px;
+                height: 38px;
+                vertical-align: middle;
+            }
+            span {
+                font-size: 22px;
+                font-weight: 600;
+                font-family: $font;
+            }
+        }
+        .dashboardNavigaitionList {
+            ul {
+                list-style-type: none;
+                li {
+                    display: inline;
+                    margin-right: 20px;
+                    .dashboardNavItem {
+                        text-decoration: none;
+                        color: #6c6c75;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                    .statusSoon {
+                        font-size: 10px;
+                        background-color: #34495e !important;
+                        display: inline;
+                        color: white;
+                        padding: 4px;
+                        border-radius: 4px;
+                        position: absolute;
+                        margin-left: 10px;
+                    }
+                    .dashboardNavItemActive {
+                        color: $btn-default;
+                    }
+                }
+            }
+        }
+        .dashboarProfile {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            cursor: pointer;
+            background-color: white;
+            position: relative;
+            .dashboarProfileImage {
+                width: 35px;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+            .dashboarProfileName {
+                font-size: 14px;
+                color: #171725;
+                font-weight: 500;
+                img {
+                    vertical-align: middle;
+                    height: 10px;
+                    margin-left: 5px;
+                }
+            }
+            .dashboardDropdown {
+                width: 200px;
+                background-color: white;
+                position: absolute;
+                left: 0;
+                top: 70px;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+                cursor: default;
+                .mobileItems {
+                    display: none;
+                }
+                ul {
+                    padding: 0px;
+                    list-style: none;
+                    li {
+                        padding: 10px 15px;
+                        .dropDownItem {
+                            text-decoration: none;
+                            color: #6c6c75;
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                        .logout {
+                            color: #e74c3c;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .dashboardContentWrapper {
+        height: 100%;
+        background-color: #fafafb;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .dashboardContent {
+            margin-top: 50px;
+            width: 40%;
+            height: 100% !important;
+            font-family: $font;
+            hr {
+                border: 0px;
+                height: 1px;
+                background-color: #cfcfcf;
+            }
+            .head {
+                .headContent {
+                    display: flex;
+                    justify-content: space-between;
+                    a {
+                        align-self: center;
+                    }
+                }
+            }
+            .resumesList {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .noResumesImage {
+                    margin: 30px;
+                    width: 400px;
+                }
+                ul {
+                    padding: 0;
+                    list-style-type: none;
+                    width: 95%;
+                    .resumeItem {
+                        width: 95%;
+                        padding: 20px;
+                        background-color: white;
+                        border-radius: 15px;
+                        display: flex;
+                        margin-top: 20px;
+                        .resumeItemStatus {
+                            width: 7px;
+                            height: 50px;
+                            border-radius: 30px;
+                        }
+                        .resumeItemContent {
+                            display: flex;
+                            margin-left: 20px;
+                            width: 100%;
+                            justify-content: space-between;
+                            align-items: center;
+                            .resumeItemContentWrapper {
+                                display: flex;
+                                flex-direction: column;
+                                .name {
+                                    font-weight: 600;
+                                }
+                                .occupation {
+                                    font-size: 14px;
+                                    color: #a7a9aa;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

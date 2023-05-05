@@ -1,0 +1,39 @@
+@import "../../variables.scss";
+.dashboardContentWrapper {
+    .dashboardSubtitle {
+        color: rgb(152, 161, 179);
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+        font-size: 14px;
+        width: 100%;
+    }
+    .settingsCard {
+        height: 130px;
+        border-radius: 10px;
+        background-color: white;
+        padding: 20px;
+        display: block;
+        margin-bottom: 20px;
+        .dashboardAction {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 13px;
+        }
+        .saveInput {
+            font-family: $font;
+            font-size: 17px;
+            background-color: transparent;
+            width: 60px;
+            font-weight: 500;
+            border: 0px;
+            cursor: pointer;
+            color: rgb(118, 124, 136);
+        }
+        .saveInput:focus {
+            outline: none;
+        }
+        .saveInput:hover {
+            color: $btn-default;
+        }
+    }
+}

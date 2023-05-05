@@ -1,2 +1,2 @@
-# globalcv-react-firebase
-CV Generator with React 
+This is Resume Generating site.
+Made by React + Firebase.

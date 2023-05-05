@@ -1,0 +1,41 @@
+
+@import'../../variables.scss';
+.simpleInput{
+    display: flex;
+    flex-direction: column;
+    .inputTitle{
+        margin: 5px 0px;
+        color: #98A1B3;
+        font-size: 15px;
+    }
+    input{
+        font-family: $font;
+        background-color: #F8FAFE;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 10px;
+        height: 35px;
+        font-size: 15px;
+    }
+    input:focus {
+        outline-width: 0;
+        
+    }
+    input:focus  ~ .border {
+        width: 99% !important;
+        display: initial;
+        opacity: 1;
+    }
+    
+    .border{
+         opacity: 0;
+        width: 0%;
+        height: 1px;
+        border: 1px solid transparent ;
+        background-color: $btn-default;
+        transition: all 0.3s ease-in-out;
+
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}

@@ -1,0 +1,10 @@
+.fade-appear {
+  opacity: 0.01;
+}
+.fade-appear-active {
+  opacity: 1;
+  transition: all 500ms;
+}
+.mobile-only {
+  display: none;
+}

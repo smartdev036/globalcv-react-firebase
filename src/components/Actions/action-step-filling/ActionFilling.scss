@@ -1,0 +1,76 @@
+@import "../../variables.scss";
+.filling {
+    padding: 2rem;
+}
+.action-introWrapper {
+   
+    
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+    .formHead {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cvTitle {
+        span {
+            font-size: 32px;
+        }
+    }
+    .progressLabel {
+        .title {
+            font-size: 0.8rem;
+        }
+        .value {
+            font-size: 0.8rem;
+        }
+    }
+    .ads {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0rem;
+    }
+    .ad-mobile {
+        display: none;
+    }
+    .sectionHeading {
+        margin: 7px 0px;
+        .sectionTitle {
+            font-weight: 600;
+            font-size: 22px;
+        }
+        .sectionDescription {
+            color: #98a1b3;
+            font-size: 14px;
+        }
+    }
+    .componentsWrapper {
+        margin-bottom: 40px;
+    }
+    form {
+        margin-top: 20px;
+        .additionalDetailsToggle {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px 0px;
+            img {
+                vertical-align: middle;
+            }
+            span {
+                color: #0042c6;
+                cursor: pointer;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+.grid-2-col {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}

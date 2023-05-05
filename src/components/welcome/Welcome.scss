@@ -1,0 +1,96 @@
+ @import '../variables.scss';
+//  .logo2{
+//    position: absolute;
+//    left:0;
+//    top: 50px;
+//    z-index: -10;
+//  }
+ .logo2 img{
+   width: 240px;
+   height: 80px;
+ }
+ .wrapper{
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  display: flex;
+}
+.actions{
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+.right-panel{
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+.previewButton{
+   display: none;
+   background-color: $mobile-toggler-color;
+   height: 70px;
+   width: 70px;
+   border-radius: 100px;
+   position: fixed;
+   bottom: 40px;
+   right: 30px;
+   text-align: center;
+   img{
+     width: 50%;
+     padding-top: 15px;
+   }
+}
+ 
+
+.previewfade-appear {
+ transform: translateY(100px);
+}
+.previewfade-appear-active {
+  transform: translateY(0px);
+
+  transition: all 400ms;
+}
+
+@media screen and (max-width: 730px) {
+  // .logo2{
+  //   position: absolute;
+  //   left:0;
+  //   top: 0px;
+  //   z-index: -10;
+  // }
+  .logo2 img{
+    width: 140px;
+    height: 50px;
+  }
+
+  .action-introWrapper .body ul{
+    margin-top: 0px !important;
+    margin-bottom:2px;
+    padding:0px;
+    li{
+      height: 30px;
+      margin-top: 2px;
+    }
+  }
+
+}
+//   .wrapper{
+//     height: 100%;
+//     width: 100%;
+//     min-width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     overflow: scroll;
+//   }
+//   .actions{
+//     flex: 1;
+//     width: 100%;
+//     height: 50%;
+//   }
+//   .right-panel{
+//     flex: 1;
+//     width: 100%;
+//     height: 50%;
+//   }
+
+// }

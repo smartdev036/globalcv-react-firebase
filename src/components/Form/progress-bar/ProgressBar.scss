@@ -1,0 +1,48 @@
+.progressWrapper{
+ width: 100%;
+   
+    .progressStatus{
+        font-size: 14px;
+        .progressPercentage{
+            color: red;
+            margin-left: 13px;
+        }
+    }
+
+    .progressPath{
+        margin-top: 10px;
+        background-color: #F2F5FA   ;
+        height: 4px;
+        width: 100%;
+        border-radius: 15px;
+        .progressFill{
+            background-color: red;
+            height: 4px;
+            border-radius: 15px;
+            transition: 1s all ease-in-out;
+        }
+    }
+}
+
+// Percentages 
+
+.pr-20{
+    width:20%;
+}
+.pr-40{
+    width:40%;
+    background-color: orange !important;
+}
+.pr-60{
+    width:60%;
+    background-color: yellow !important;
+
+}
+.pr-80{
+    width:80%;
+    background-color: yellowgreen !important;
+}
+.pr-100{
+    width:100%;
+    background-color: green !important;
+}
